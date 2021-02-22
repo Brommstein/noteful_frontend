@@ -18,7 +18,7 @@ class NotefulApp extends React.Component {
     }
 
     getFolderData() {
-        fetch(`https://noteful-tanner-cason.herokuapp.com/api/folder`)
+        fetch(`https://noteful-server-ryan-conley.herokuapp.com/api/folder`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Hey, something went wrong')
@@ -36,7 +36,7 @@ class NotefulApp extends React.Component {
     }
 
     getNoteData() {
-        fetch(`https://noteful-tanner-cason.herokuapp.com/api/note`)
+        fetch(`https://noteful-server-ryan-conley.herokuapp.com/api/note`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Hey, something went wrong')

@@ -10,7 +10,7 @@ class Note extends React.Component {
     deleteButton = (e) => {
         e.stopPropagation();
         const { deleteItem } = this.context;
-        fetch(`https://noteful-tanner-cason.herokuapp.com/api/note/${this.props.id}`, {
+        fetch(`https://noteful-server-ryan-conley.herokuapp.com/api/note/${this.props.id}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json'
@@ -20,9 +20,9 @@ class Note extends React.Component {
                 if (!response.ok) {
                     throw new Error('There was an error in deletion')
                 } else { deleteItem(this.props.id); }
-                
+
             })
-            
+
     }
 
     render() {

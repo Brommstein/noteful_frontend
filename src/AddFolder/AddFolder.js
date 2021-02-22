@@ -17,9 +17,9 @@ class AddFolder extends React.Component {
 
         const { addFolder } = this.context;
 
-        fetch('https://noteful-tanner-cason.herokuapp.com/api/folder', {
+        fetch('https://noteful-server-ryan-conley.herokuapp.com/api/folder', {
             method: 'POST',
-            headers: { 
+            headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `${process.env.API_TOKEN}`
             },
